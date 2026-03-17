@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Async Weather Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<h1 class="title">🌤 Async Weather Tracker</h1>
+
+<div class="top-section">
+
+<div class="search-card">
+
+<h3>Search City</h3>
+
+<div class="search-box">
+<input type="text" id="userInputCity" placeholder="Delhi">
+<button id="triggerSearch">Search</button>
+</div>
+
+<h4>Search History</h4>
+<div id="historyContainer"></div>
+
+</div>
+
+
+<div class="weather-card">
+
+<h3>Weather Info</h3>
+
+<div class="weather-data">
+
+<div class="row">
+<span>City</span>
+<span id="res-city">City is not found</span>
+</div>
+
+<div class="row">
+<span>Temp</span>
+<span id="res-temp">--</span>
+</div>
+
+<div class="row">
+<span>Weather</span>
+<span id="res-cond">--</span>
+</div>
+
+<div class="row">
+<span>Humidity</span>
+<span id="res-hum">--</span>
+</div>
+
+<div class="row">
+<span>Wind</span>
+<span id="res-wind">--</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="console">
+
+<h3>Console – Event Loop</h3>
+
+<div id="runtime-console">
+<span>// System ready...</span>
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
